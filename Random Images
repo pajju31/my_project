@@ -1,0 +1,38 @@
+<html>
+<head/>
+<title>Random Images</title>
+<h1><u><b><center>5 Random Images</center></b></u></h1>
+<script type="text/javascript">
+  var imageUrls = [
+  "http://images.clipartpanda.com/smiley-face-clip-art-thumbs-up-215700.png"
+  , "http://i1.cpcache.com/product_zoom/510414468/cowboy_smiley_face_aluminum_license_plate.jpg?height=250&width=250&padToSquare=true"
+  , "http://www.clipartbest.com/cliparts/bRi/dEg/bRidEgBc9.jpeg"
+  , "http://i1.cpcache.com/product_zoom/703046362/smiley_face_large_glasses_225_button.jpg?height=250&width=250&padToSquare=true"
+  , "http://happyendings.blog.se/files/2013/04/1_wilson-smile-frown-damp.jpg"
+  , "http://www.rockswallpaperhd.com/wp-content/uploads/2013/11/Sad-Face-and-Smiley-Faces-HD-Wallpapers-300x250.jpg"
+  , "https://upload.wikimedia.org/wikipedia/commons/9/9e/Lilyu_-_smile.svg"
+  , "http://www.ppcf.org/wp-content/uploads/2014/09/heart-250x250.png"
+  , "https://upload.wikimedia.org/wikipedia/commons/5/53/Six_sided_dice.png"
+  , "http://www.synchronicityheals.com/blog/assets/0_0_0_0_250_250_library_30851.png?u=635102754662477081"
+  , "http://3.imimg.com/data3/AH/GE/MY-6065243/outdoor-media-management-250x250.jpg"
+  , "http://www.hiretale.com/files/resize_logo/13266f"
+  ];
+
+
+  function getImageHtmlCode() {
+    var dataIndex = Math.floor(Math.random() * imageUrls.length);
+    var img = '<a href=\"' + imageUrls[dataIndex] + '"><img src="'; 
+    img += imageUrls[dataIndex];
+    img +='"></a>';
+    return img;
+  }
+</script>
+</head>
+
+<script type="text/javascript">
+  for (i = 0; i < 5; i++) {
+  document.write(getImageHtmlCode());
+	}
+</script>
+</body>
+</html>
